@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula Jquery/title>
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Jquery</title>
+    <!-- Aqui vai o link do Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div><h1>Lista de Nomes</h1></div>
 
     <div>
-        <ul>
-            <li>João Silva</li>
-            <li>Maria Oliveira</li>
-            <li>Carlos Santos</li>
-            <li>Ana Pereira</li>
-            <li>Pedro Costa</li>
-        </ul>
+      <ul>
+        <li>João Silva</li>
+        <li>Maria Oliveira</li>
+        <li>Carlos Santos</li>
+        <li>Ana Pereira</li>
+        <li>Pedro Costa</li>
+      </ul>
     </div>
 
     <div>
-        <button id="btn">click aqui</button>
+      <button id="btn">click aqui</button>
     </div>
+
+    <script>
+      /*Para escolher uma tag a ser utilizada utiliza o $() , dentro dele vai a tag, como o H1*/
+      $("h1").fadeOut("2000").fadeIn("2000");
+
+      // /* O .fadeOut e .fadeIn são metodos do Jquery que vão apresentar funcionalidades, no caso fazer desaparecer e aparecer, ("2000") é o tempo, que no caso são 2 segundos.
+
+      // $('').remove Este comando remove todos da tag li
+
+      // $('h1').append("de pessoas") Este comando adiciona uma string, no caso dentro da tag h1
+
+      // Usando Jquery com uma função:
+
+      $("#btn").on("click", botao);
+
+      function botao() {
+        // $('li').remove()
+      }
+
+      //    Este codigo é para ao clicar no botao a lista com os nomes somem.
+
+      /* Esta função é para tornar todos os nomes da lista na cor azul.
+
+
+    function botao() {
+        $('li').css({'color':'blue'})
+       }
+
     
-</body>
+       */
+    </script>
+  </body>
 </html>
